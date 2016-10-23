@@ -6,16 +6,19 @@ Module reference
 
 .. rubric:: Module overview:
 
-:System: `clock`_ - `cpu_freq`_ - `cpu_usage`_ - `disk`_ - `keyboard_locks`_ - `load`_ - `mem`_ -
-         `swap`_ - `uname`_ - `uptime`_ - `xkblayout`_
+:System: `clock`_ - `cpu_freq`_ - `cpu_usage`_ - `disk`_ - `gpu_mem`_ - `gpu_temp`_ - `keyboard_locks`_ -
+         `load`_ - `mem`_ - `swap`_ - `uname`_ - `uptime`_ - `weekcal`_ - `xkblayout`_
 :Audio: `alsa`_ - `pulseaudio`_
-:Hardware: `backlight`_ - `battery`_ - `temp`_
-:Network: `net_speed`_ - `network`_ - `online`_ - `openstack_vms`_ - `openvpn`_
-:Music: `cmus`_ - `moc`_ - `mpd`_ - `now_playing`_ - `pianobar`_ - `playerctl`_ - `spotify`_
-:Websites: `bitcoin`_ - `dota2wins`_ - `github`_ - `modsde`_ - `parcel`_ - `reddit`_ - `weather`_ -
-           `whosonlocation`_
-:Other: `anybar`_ - `mail`_ - `pomodoro`_ - `pyload`_ - `text`_ - `updates`_
-:Advanced: `file`_ - `regex`_ - `makewatch`_ - `runwatch`_ - `shell`_
+:Hardware: `backlight`_ - `battery`_ - `dpms`_ - `redshift`_ - `solaar`_ - `temp`_
+:Network: `net_speed`_ - `network`_ - `online`_ - `openstack_vms`_ - `openvpn`_ - `ping`_ - `zabbix`_
+:Music: `cmus`_ - `lastfm`_ - `moc`_ - `mpd`_ - `now_playing`_ - `pianobar`_ - `playerctl`_ - `spotify`_
+:Streaming: `abc_radio`_ - `plexstatus`_
+:Websites: `bitcoin`_ - `dota2wins`_ - `github`_ - `google_calendar`_ - `modsde`_ - `parcel`_ -
+           `reddit`_ - `vk`_ - `weather`_ - `whosonlocation`_
+:Other: `anybar`_ - `iinet`_ - `mail`_ - `moon`_ - `pomodoro`_ - `pyload`_ - `scores`_ - `sge`_ -
+        `syncthing`_ - `taskwarrior`_ - `text`_ - `timer`_ - `timewarrior`_ - `updates`_
+:Advanced: `file`_ - `makewatch`_ - `openfiles`_ - `regex`_ - `runwatch`_ - `scratchpad`_ - `shell`_ -
+           `window_title`_
 
 .. autogen:: i3pystatus Module
 
