@@ -14,7 +14,7 @@ class Scratchpad(Module):
 
     .. rubric:: Available formaters
 
-    * `{number}`      — amount of windows on scratchpad
+    * `{number}`      — number of windows on scratchpad
 
     @author jok
     @license BSD

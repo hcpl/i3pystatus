@@ -60,7 +60,7 @@ class WOL(IntervalModule):
     """
     Change your whosonlocation.com status.
 
-    Requires the PyPi module `beautifulsoup4`
+    Requires the PyPI module `beautifulsoup4`
     """
     location = None
     email = None

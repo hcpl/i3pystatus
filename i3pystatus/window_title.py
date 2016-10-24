@@ -17,7 +17,7 @@ class WindowTitle(Module):
     .. rubric:: Available formaters
 
     * `{title}`      — title of current focused window
-    * `{class_name}` - name of application class
+    * `{class_name}` — name of application class
 
     @author jok
     @license BSD

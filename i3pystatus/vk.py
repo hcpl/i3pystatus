@@ -25,7 +25,7 @@ class Vk(IntervalModule):
     color_bad = "#ff0000"
 
     settings = (
-        ("app_id", "Id of your VK API app"),
+        ("app_id", "ID of your VK API app"),
         ("access_token", "Your access token. You must have `messages` and `offline` access permissions"),
         ("token_error", "Message to be shown if there's some problem with your token"),
         ("color", "General color of the output"),

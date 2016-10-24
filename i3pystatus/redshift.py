@@ -13,7 +13,7 @@ class Redshift(IntervalModule):
     """
     Show status and control redshift - http://jonls.dk/redshift/.
 
-    This module runs a instace of redshift by itself, since it needs to parse
+    This module runs an instance of redshift by itself, since it needs to parse
     its output, so you should remove redshift/redshift-gtk from your i3 config
     before using this module.
 

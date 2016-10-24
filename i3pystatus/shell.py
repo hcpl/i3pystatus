@@ -9,7 +9,7 @@ class Shell(IntervalModule):
 
     .. rubric:: Available formatters
 
-    * `{output}` — just the striped command output without newlines
+    * `{output}` — just the stripped command output without newlines
     """
 
     color = "#FFFFFF"

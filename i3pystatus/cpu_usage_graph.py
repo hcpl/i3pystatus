@@ -6,7 +6,7 @@ from i3pystatus.core.util import make_graph
 class CpuUsageGraph(CpuUsage, ColorRangeModule):
     """
      Shows CPU usage as a Unicode graph.
-     The first output will be inacurate.
+     The first output will be inaccurate.
 
      Depends on the PyPI colour module - https://pypi.python.org/pypi/colour/0.0.5
 

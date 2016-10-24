@@ -12,7 +12,7 @@ except ImportError:
 class CpuUsage(IntervalModule):
     """
     Shows CPU usage.
-    The first output will be inacurate.
+    The first output will be inaccurate.
 
     Linux only
 

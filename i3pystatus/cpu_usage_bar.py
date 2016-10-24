@@ -6,7 +6,7 @@ from i3pystatus.core.util import make_bar, make_vertical_bar
 class CpuUsageBar(CpuUsage, ColorRangeModule):
     """
     Shows CPU usage as a bar (made with unicode box characters).
-    The first output will be inacurate.
+    The first output will be inaccurate.
 
     Linux only
 

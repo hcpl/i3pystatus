@@ -7,7 +7,7 @@ class Openfiles(IntervalModule):
     """
 
     settings = (
-        ("filenr_path", "Location to file-nr (usually /proc/sys/fs/file-nr"),
+        ("filenr_path", "Location to file-nr (usually /proc/sys/fs/file-nr)"),
         "color",
         "format"
     )

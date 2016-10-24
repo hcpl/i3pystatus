@@ -133,8 +133,8 @@ class BatteryChecker(IntervalModule):
     * `{status}`
     * `{no_of_batteries}` — The number of batteries included
     * `{battery_ident}` — the same as the setting
-    * `{bar}` —bar displaying the relative percentage graphically
-    * `{bar_design}` —bar displaying the absolute percentage graphically
+    * `{bar}` — bar displaying the relative percentage graphically
+    * `{bar_design}` — bar displaying the absolute percentage graphically
 
     This module supports the :ref:`formatp <formatp>` extended string format
     syntax. By setting the ``FULL`` status to an empty string, and including
