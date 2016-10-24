@@ -11,7 +11,7 @@ class Xkblayout(IntervalModule):
     is enabled.
 
     ``layouts`` can be stated with or without variants,
-    e.g.: status.register("xkblayout", layouts=["de neo", "de"])
+    e.g.: ``status.register("xkblayout", layouts=["de neo", "de"])``
     """
 
     interval = 1

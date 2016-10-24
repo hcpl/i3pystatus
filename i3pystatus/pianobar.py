@@ -12,9 +12,10 @@ class Pianobar(IntervalModule):
     https://github.com/jlucchese/pianobar/blob/master/contrib/pianobar-song-i3.sh
 
     Mouse events:
-    - Left click play/pauses
-    - Right click plays next song
-    - Scroll up/down changes volume
+
+    * Left click play/pauses
+    * Right click plays next song
+    * Scroll up/down changes volume
     """
 
     settings = (

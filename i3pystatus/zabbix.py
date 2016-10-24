@@ -6,7 +6,7 @@ class Zabbix(IntervalModule):
     """
     Zabbix alerts watcher
 
-    Requires: pyzabbix
+    Requires `pyzabbix` (from PyPI)
 
     .. rubric:: Available formatters
 

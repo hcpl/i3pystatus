@@ -16,10 +16,10 @@ class Shell(IntervalModule):
     error_color = "#FF0000"
 
     settings = (
-        ("command", "command to be executed"),
-        ("color", "standard color"),
-        ("error_color", "color to use when non zero exit code is returned"),
-        "format"
+        ("command", "Command to be executed"),
+        ("color", "Default color"),
+        ("error_color", "Color to use when non zero exit code is returned"),
+        "format",
     )
 
     required = ("command",)

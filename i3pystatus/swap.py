@@ -7,14 +7,14 @@ class Swap(IntervalModule):
     """
     Shows swap load
 
+    Requires `psutil` (from PyPI)
+
     .. rubric:: Available formatters
 
-    * {free}
-    * {percent_used}
-    * {used}
-    * {total}
-
-    Requires psutil (from PyPI)
+    * `{free}` — free swap
+    * `{percent_used}` — swap used in percents
+    * `{used}` — swap used
+    * `{total}` — total swap
     """
 
     format = "{free} MiB"
@@ -30,24 +30,22 @@ class Swap(IntervalModule):
     round_size = 1
 
     settings = (
-        ("format", "format string used for output."),
+        ("format", "Default format string"),
         ("format_no_swap",
-         "format string used when no swap is enabled, "
+         "Format string used when no swap is enabled, "
          "set to None to use default format"),
-        ("hide_if_empty", "hide swap block when swap is not used"),
+        ("hide_if_empty", "Hide swap block when swap is not used"),
         ("divisor",
-         "divide all byte values by this value, default is 1024**2 (megabytes)"),
-        ("warn_percentage", "minimal percentage for warn state"),
-        ("alert_percentage", "minimal percentage for alert state"),
-        ("color", "standard color"),
-        ("warn_color",
-         "defines the color used when warn percentage is exceeded"),
-        ("alert_color",
-         "defines the color used when alert percentage is exceeded"),
+         "Divide all byte values by this value, default is 1024**2 (megabytes)"),
+        ("warn_percentage", "Minimal percentage for warn state"),
+        ("alert_percentage", "Minimal percentage for alert state"),
+        ("color", "Default color"),
+        ("warn_color", "Color used when warn percentage is exceeded"),
+        ("alert_color", "Color used when alert percentage is exceeded"),
         ("color_no_swap",
-         "defines the color used when no swap is enabled, "
+         "Color used when no swap is enabled, "
          "set to None to use default color"),
-        ("round_size", "defines number of digits in round"),
+        ("round_size", "Defines number of digits in round"),
     )
 
     def run(self):

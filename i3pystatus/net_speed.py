@@ -12,7 +12,8 @@ from io import StringIO
 class NetSpeed(IntervalModule):
     """
     Attempts to provide an estimation of internet speeds.
-    Requires: speedtest_cli
+
+    Requires `speedtest_cli` (from PyPI)
     """
 
     settings = (

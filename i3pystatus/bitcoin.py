@@ -36,21 +36,21 @@ class Bitcoin(IntervalModule):
 
     .. rubric:: Available formatters
 
-    * {last_price}
-    * {ask_price}
-    * {bid_price}
-    * {daily_average}
-    * {volume}
-    * {volume_thousend}
-    * {volume_percent}
-    * {age}
-    * {status}
-    * {last_tx_type}
-    * {last_tx_addr}
-    * {last_tx_value}
-    * {balance_btc}
-    * {balance_fiat}
-    * {symbol}
+    * `{last_price}`
+    * `{ask_price}`
+    * `{bid_price}`
+    * `{daily_average}`
+    * `{volume}`
+    * `{volume_thousend}`
+    * `{volume_percent}`
+    * `{age}`
+    * `{status}`
+    * `{last_tx_type}`
+    * `{last_tx_addr}`
+    * `{last_tx_value}`
+    * `{balance_btc}`
+    * `{balance_fiat}`
+    * `{symbol}`
 
     """
 

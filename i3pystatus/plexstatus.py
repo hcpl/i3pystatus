@@ -11,12 +11,12 @@ class Plexstatus(IntervalModule):
     settings = (
         ("apikey", "Your Plex API authentication key "
          "(https://support.plex.tv/hc/en-us/articles/204059436-Finding-your-"
-         "account-token-X-Plex-Token) ."),
-        ("address", "Hostname or IP address of the Plex Media Server."),
-        ("port", "Port which Plex Media Server is running on."),
-        ("interval", "Update interval (in seconds)."),
+         "account-token-X-Plex-Token)"),
+        ("address", "Hostname or IP address of the Plex Media Server"),
+        ("port", "Port which Plex Media Server is running on"),
+        ("interval", "Update interval (in seconds)"),
         ("format_no_streams", "String that is shown if nothing is being "
-         "streamed."),
+         "streamed"),
         "format"
     )
     required = ("apikey", "address")

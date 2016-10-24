@@ -11,8 +11,8 @@ class PulseAudio(Module, ColorRangeModule):
     """
     Shows volume of default PulseAudio sink (output).
 
-    - Requires amixer for toggling mute and incrementing/decrementing volume on scroll.
-    - Depends on the PyPI colour module - https://pypi.python.org/pypi/colour/0.0.5
+    * Requires ``amixer`` for toggling mute and incrementing/decrementing volume on scroll.
+    * Depends on the PyPI `colour` module - https://pypi.python.org/pypi/colour
 
     .. rubric:: Available formatters
 
@@ -26,17 +26,17 @@ class PulseAudio(Module, ColorRangeModule):
 
     settings = (
         "format",
-        ("format_muted", "optional format string to use when muted"),
-        ("format_selected", "string used to mark this sink if selected"),
+        ("format_muted", "Optional format string to use when muted"),
+        ("format_selected", "String used to mark this sink if selected"),
         "muted", "unmuted",
         "color_muted", "color_unmuted",
-        ("step", "percentage to increment volume on scroll"),
-        ("sink", "sink name to use, None means pulseaudio default"),
+        ("step", "Percentage to increment volume on scroll"),
+        ("sink", "Sink name to use, None means pulseaudio default"),
         ("move_sink_inputs", "Move all sink inputs when we change the default sink"),
-        ("bar_type", "type of volume bar. Allowed values are 'vertical' or 'horizontal'"),
-        ("multi_colors", "whether or not to change the color from "
+        ("bar_type", "Type of volume bar. Allowed values are 'vertical' or 'horizontal'"),
+        ("multi_colors", "Whether or not to change the color from "
                          "'color_muted' to 'color_unmuted' based on volume percentage"),
-        ("vertical_bar_width", "how many characters wide the vertical volume_bar should be")
+        ("vertical_bar_width", "How many characters wide the vertical volume_bar should be")
     )
 
     muted = "M"

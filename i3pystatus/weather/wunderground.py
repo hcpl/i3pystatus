@@ -89,7 +89,7 @@ class Wunderground(WeatherBackend):
         ('forecast', 'Set to ``True`` to check forecast (generates one '
                      'additional API request per weather update). If set to '
                      '``False``, then the ``low_temp`` and ``high_temp`` '
-                     'formatters will be set to empty strings.'),
+                     'formatters will be set to empty strings'),
         ('update_error', 'Value for the ``{update_error}`` formatter when an '
                          'error is encountered while checking weather data'),
     )

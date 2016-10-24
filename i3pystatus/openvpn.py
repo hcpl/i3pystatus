@@ -9,12 +9,12 @@ class OpenVPN(IntervalModule):
     Monitor OpenVPN connections.
     Currently only supports systems that use Systemd.
 
-    Formatters:
+    .. rubric:: Available formatters
 
-    * {vpn_name} — Same as setting.
-    * {status} — Unicode up or down symbol.
-    * {output} — Output of status_command.
-    * {label} — Label for this connection, if defined.
+    * `{vpn_name}` — Same as setting.
+    * `{status}` — Unicode up or down symbol.
+    * `{output}` — Output of ``status_command``.
+    * `{label}` — Label for this connection, if defined.
 
     """
 

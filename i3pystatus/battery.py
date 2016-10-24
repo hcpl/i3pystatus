@@ -131,7 +131,7 @@ class BatteryChecker(IntervalModule):
     * `{percentage_design}` — absolute battery charge percentage
     * `{consumption (Watts)}` — current power flowing into/out of the battery
     * `{status}`
-    * `{no_of_batteries}` — The number of batteries included
+    * `{no_of_batteries}` — number of batteries included
     * `{battery_ident}` — the same as the setting
     * `{bar}` — bar displaying the relative percentage graphically
     * `{bar_design}` — bar displaying the absolute percentage graphically

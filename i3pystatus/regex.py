@@ -13,9 +13,9 @@ class Regex(IntervalModule):
     flags = 0
     format = "{0}"
     settings = (
-        ("format", "format string used for output"),
+        ("format", "Format string used for output"),
         "regex",
-        ("file", "file to search for regex matches"),
+        ("file", "File to search for regex matches"),
         ("flags", "Python.re flags"),
     )
     required = ("regex", "file")

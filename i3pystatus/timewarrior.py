@@ -9,9 +9,10 @@ import subprocess
 class Timewarrior(IntervalModule):
     """
     Show current Timewarrior tracking
-    Requires `json` `dateutil`
 
-    Formaters:
+    Requires `python-dateutil` (from PyPI)
+
+    .. rubric:: Available formatters:
 
     * `{tags}`  — contains tags of current track
     * `{start}` - contains start of track
@@ -28,9 +29,9 @@ class Timewarrior(IntervalModule):
     track = None
 
     settings = (
-        ('format', 'format string'),
+        "format",
         ('enable_stop', 'Allow right click to stop tracking'),
-        ('enable_continue', 'ALlow right click to continue tracking'),
+        ('enable_continue', 'Allow right click to continue tracking'),
         ('color_running', '#00FF00'),
         ('color_stopped', '#F00000'),
     )

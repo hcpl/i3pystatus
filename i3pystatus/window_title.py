@@ -10,7 +10,11 @@ class WindowTitle(Module):
     Uses asynchronous update via i3 IPC events.
     Provides instant title update only when it required.
 
-    fork from window_tile_async of py3status by Anon1234 https://github.com/Anon1234
+    Fork from `window_tile_async`_ of `py3status`_ by `Anon1234`_
+
+    .. _window_tile_async: https://github.com/ultrabug/py3status/blob/master/py3status/modules/window_title_async.py
+    .. _py3status: https://github.com/ultrabug/py3status
+    .. _Anon1234: https://github.com/Anon1234
 
     Requires the PyPI package `i3ipc`.
 
@@ -24,11 +28,11 @@ class WindowTitle(Module):
     """
 
     settings = (
-        ("format", "format string."),
-        ("always_show", "do not hide the title when it can be already visible"),
-        ("empty_title", "string that will be shown instead of the title when the title is hidden"),
-        ("max_width", "maximum width of title"),
-        ("color", "text color"),
+        ("format", "Format string"),
+        ("always_show", "Do not hide the title when it can be already visible"),
+        ("empty_title", "String that will be shown instead of the title when the title is hidden"),
+        ("max_width", "Maximum width of the title"),
+        ("color", "Text color"),
     )
 
     format = "{title}"

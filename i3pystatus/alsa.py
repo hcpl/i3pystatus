@@ -8,7 +8,7 @@ class ALSA(IntervalModule):
     """
     Shows volume of ALSA mixer. You can also use this for inputs, btw.
 
-    Requires pyalsaaudio
+    Requires `pyalsaaudio` (from PyPI)
 
     .. rubric:: Available formatters
 
@@ -22,15 +22,15 @@ class ALSA(IntervalModule):
 
     settings = (
         "format",
-        ("format_muted", "optional format string to use when muted"),
+        ("format_muted", "Optional format string to use when muted"),
         ("mixer", "ALSA mixer"),
         ("mixer_id", "ALSA mixer id"),
         ("card", "ALSA sound card"),
-        ("increment", "integer percentage of max volume to in/decrement volume on mousewheel"),
+        ("increment", "Integer percentage of max volume to in/decrement volume on mousewheel"),
         "muted", "unmuted",
         "color_muted", "color",
         "channel",
-        ("map_volume", "volume display/setting as in AlsaMixer. increment option is ignored then.")
+        ("map_volume", "Volume display/setting as in AlsaMixer. increment option is ignored then.")
     )
 
     muted = "M"

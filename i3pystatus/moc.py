@@ -23,7 +23,7 @@ class Moc(IntervalModule):
     """
 
     settings = (
-        ('format', 'formatp string'),
+        ('format', '``formatp`` string'),
         ('format_not_running', 'Text to show if MOC is not running'),
         ('color', 'The color of the text'),
         ('color_not_running', 'The color of the text, when MOC is not running'),

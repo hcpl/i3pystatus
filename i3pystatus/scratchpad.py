@@ -8,7 +8,11 @@ class Scratchpad(Module):
     """
     Display the amount of windows and indicate urgency hints on scratchpad (async).
 
-    fork from scratchpad_async of py3status by cornerman
+    Fork from `scratchpad_async`_ of `py3status`_ by `cornerman`_
+
+    .. _scratchpad_async: https://github.com/ultrabug/py3status/blob/master/py3status/modules/scratchpad_async.py
+    .. _py3status: https://github.com/ultrabug/py3status
+    .. _cornerman: https://github.com/cornerman
 
     Requires the PyPI package `i3ipc`.
 
@@ -21,11 +25,11 @@ class Scratchpad(Module):
     """
 
     settings = (
-        ("format", "format string."),
-        ("always_show", "whether the indicator should be shown if there are"
+        ("format", "Format string"),
+        ("always_show", "Whether the indicator should be shown if there are"
          " no scratchpad windows"),
-        ("color_urgent", "color of urgent"),
-        ("color", "text color"),
+        ("color_urgent", "Color of urgent"),
+        ("color", "Text color"),
     )
 
     format = u"{number} ⌫"

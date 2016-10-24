@@ -13,25 +13,29 @@ dec = decimal.Decimal
 
 class MoonPhase(IntervalModule):
     """
-    Available Formatters
+    Shows current information about moon
 
-    status: Allows for mapping of current moon phase
-    - New Moon:
-    - Waxing Crescent:
-    - First Quarter:
-    - Waxing Gibbous:
-    - Full Moon:
-    - Waning Gibbous:
-    - Last Quarter:
-    - Waning Crescent:
+    .. rubric:: Available values for dictionary keys
 
+    * New Moon
+    * Waxing Crescent
+    * First Quarter
+    * Waxing Gibbous
+    * Full Moon
+    * Waning Gibbous
+    * Last Quarter
+    * Waning Crescent
+
+    .. rubric:: Available Formatters
+
+    * `{status}` — current moon phase
+    * `{illum}` — percentage of moon that is visible
     """
 
     settings = (
-        "format",
-        ("status", "Current moon phase"),
-        ("illum", "Percentage that is illuminated"),
-        ("color", "Set color"),
+        ("format", "Format string used for output"),
+        ("status", "Mapping of corresponding output strings"),
+        ("color", "Mapping of corresponding colors"),
     )
 
     format = "{illum} {status}"

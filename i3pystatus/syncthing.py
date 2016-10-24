@@ -13,7 +13,7 @@ class Syncthing(IntervalModule):
     Check Syncthing's online status and start/stop Syncthing via
     click events.
 
-    Requires `requests`.
+    Requires `requests` (from PyPI)
     """
 
     format_up = 'ST up'

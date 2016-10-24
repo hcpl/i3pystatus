@@ -11,7 +11,7 @@ class WeekCal(IntervalModule):
     By default, the current day of week is displayed in the front, and the month and year are
     displayed in the back.
 
-    Example: ``Sat  16 17 18 19 20[21]22  May 2016``
+    Example output: ``Sat  16 17 18 19 20[21]22  May 2016``
     """
 
     settings = (

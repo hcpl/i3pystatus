@@ -4,7 +4,7 @@ from i3pystatus import IntervalModule, formatp
 
 class Uptime(IntervalModule):
     """
-    Outputs Uptime
+    Outputs uptime
 
     .. rubric:: Available formatters
 
@@ -16,10 +16,10 @@ class Uptime(IntervalModule):
     """
 
     settings = (
-        ("format", "Format string"),
+        "format",
         ("color", "String color"),
-        ("alert", "If you want the string to change color"),
-        ("seconds_alert", "How many seconds necessary to start the alert"),
+        ("alert", "Whether to alert"),
+        ("seconds_alert", "Alert if uptime is more than this number of seconds"),
         ("color_alert", "Alert color"),
     )
 

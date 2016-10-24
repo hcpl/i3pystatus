@@ -182,7 +182,7 @@ class Github(IntervalModule):
         )
     '''
     settings = (
-        ('format', 'format string'),
+        ('format', 'Format string'),
         ('status', 'Dictionary mapping statuses to the text which represents '
                    'that status type. This defaults to ``GitHub`` for all '
                    'status types.'),

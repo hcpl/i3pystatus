@@ -35,7 +35,7 @@ class AnyBar(IntervalModule):
 
     settings = (
         ("port", "UDP port to listen"),
-        ("color", "initial color"),
+        ("color", "Initial color"),
     )
 
     def main_loop(self):

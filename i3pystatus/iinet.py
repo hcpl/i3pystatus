@@ -9,9 +9,10 @@ __author__ = 'facetoe'
 class IINet(IntervalModule, ColorRangeModule):
     """
     Check IINet Internet usage.
-    Requires `requests` and `colour`
 
-    Formatters:
+    Requires `requests` and `colour` (from PyPI)
+
+    .. rubric:: Available formatters
 
     * `{percentage_used}`        — percentage of your quota that is used
     * `{percentage_available}`   — percentage of your quota that is available

@@ -10,7 +10,7 @@ class SGETracker(IntervalModule):
     Used to display status of Batch computing jobs on a cluster running Sun Grid Engine.
     The data is collected via ssh, so a valid ssh address must be specified.
 
-    Requires lxml.
+    Requires `lxml` (from PyPI)
     """
 
     interval = 60

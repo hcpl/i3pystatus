@@ -7,14 +7,14 @@ class Mem(IntervalModule):
     """
     Shows memory load
 
+    Requires `psutil` (from PyPI)
+
     .. rubric:: Available formatters
 
-    * {avail_mem}
-    * {percent_used_mem}
-    * {used_mem}
-    * {total_mem}
-
-    Requires psutil (from PyPI)
+    * `{avail_mem}` — available memory
+    * `{percent_used_mem}` — memory used in percents
+    * `{used_mem}` — memory used
+    * `{total_mem}` — total memory
     """
 
     format = "{avail_mem} MiB"
@@ -27,17 +27,15 @@ class Mem(IntervalModule):
     round_size = 1
 
     settings = (
-        ("format", "format string used for output."),
+        ("format", "Format string used for output"),
         ("divisor",
-         "divide all byte values by this value, default is 1024**2 (megabytes)"),
-        ("warn_percentage", "minimal percentage for warn state"),
-        ("alert_percentage", "minimal percentage for alert state"),
-        ("color", "standard color"),
-        ("warn_color",
-         "defines the color used when warn percentage is exceeded"),
-        ("alert_color",
-         "defines the color used when alert percentage is exceeded"),
-        ("round_size", "defines number of digits in round"),
+         "Divide all byte values by this value, default is 1024**2 (megabytes)"),
+        ("warn_percentage", "Minimal percentage for warn state"),
+        ("alert_percentage", "Minimal percentage for alert state"),
+        ("color", "Default color"),
+        ("warn_color", "Color used when warn percentage is exceeded"),
+        ("alert_color", "Color used when alert percentage is exceeded"),
+        ("round_size", "Defines number of digits in round"),
 
     )
 

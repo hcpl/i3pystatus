@@ -6,10 +6,12 @@ import vk
 class Vk(IntervalModule):
     """
     Display amount of unread messages in VK social network.
+
     Creating your own VK API app is highly recommended for your own privacy, though there is a default one provided.
-    Reference vk.com/dev for instructions on creating VK API app.
-    If access_token is not specified, the module will try to open a request page in browser.
+    Reference https://vk.com/dev for instructions on creating VK API app.
+    If ``access_token`` is not specified, the module will try to open a request page in browser.
     You will need to manually copy obtained acess token to your config file.
+
     Requires the PyPI package `vk`.
     """
 

@@ -6,12 +6,11 @@ import subprocess
 class Taskwarrior(IntervalModule):
     """
     Check Taskwarrior for pending tasks
-    Requires `json`
 
-    Formaters:
+    .. rubric:: Available formatters:
 
-    * `{ready}`   — contains number of tasks returned by ready_filter
-    * `{urgent}`  — contains number of tasks returned by urgent_filter
+    * `{ready}`   — contains number of tasks returned by ``ready_filter``
+    * `{urgent}`  — contains number of tasks returned by ``urgent_filter``
     * `{next}`    — contains the description of next task
     """
 
@@ -32,12 +31,12 @@ class Taskwarrior(IntervalModule):
     on_rightclick = 'mark_task_as_done'
 
     settings = (
-        ('format', 'format string'),
-        ('ready_filter', 'Filters to get ready tasks example: `+READY`'),
-        ('urgent_filter', 'Filters to get urgent tasks example: `+TODAY`'),
-        ('enable_mark_done', 'Enable right click mark task as done'),
-        ('color_urgent', '#FF0000'),
-        ('color_ready', '#78EAF2')
+        "format",
+        ('ready_filter', 'Filters to get ready tasks (example: `+READY`)'),
+        ('urgent_filter', 'Filters to get urgent tasks (example: `+TODAY`)'),
+        ('enable_mark_done', 'Enable right click to mark task as done'),
+        ('color_urgent', 'Color used for urgent tasks'),
+        ('color_ready', 'Color used for ready tasks')
     )
 
     def get_next_task(self):

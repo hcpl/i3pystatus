@@ -6,7 +6,7 @@ class GPUTemperature(IntervalModule):
     """
     Shows GPU temperature
 
-    Currently Nvidia only and nvidia-smi required
+    Currently for Nvidia only and ``nvidia-smi`` utility is required
 
     .. rubric:: Available formatters
 
@@ -14,8 +14,8 @@ class GPUTemperature(IntervalModule):
     """
 
     settings = (
-        ("format", "format string used for output. {temp} is the temperature in integer degrees celsius"),
-        ("display_if", "snippet that gets evaluated. if true, displays the module output"),
+        ("format", "Format string used for output. {temp} is the temperature in integer degrees celsius"),
+        ("display_if", "Snippet that gets evaluated. if true, displays the module output"),
         "color",
         "alert_temp",
         "alert_color",

@@ -15,14 +15,16 @@ class ModsDeChecker(IntervalModule):
     """
     This class returns i3status parsable output of the number of
     unread posts in any bookmark in the mods.de forums.
+
+    .. rubric:: Available formatters:
+
+    * `{unread}` — number of unread posts
     """
 
     settings = (
-        ("format",
-         """Use {unread} as the formatter for number of unread posts"""),
-        ('keyring_backend', 'alternative keyring backend for retrieving credentials'),
-        ("offset", """subtract number of posts before output"""),
-        "color", "username", "password"
+        ('keyring_backend', "Alternative keyring backend for retrieving credentials"),
+        ("offset", "Subtract number of posts before output"),
+        "format", "color", "username", "password"
     )
     required = ("username", "password")
     keyring_backend = None

@@ -14,11 +14,11 @@ class NoPlayerException(Exception):
 
 class NowPlaying(IntervalModule):
     """
-    Shows currently playing track information, supports most media players
-
-    * Requires python-dbus available from every distros' package manager.
+    Shows currently playing track information, supports most media players.
 
     Left click on the module play/pauses, right click goes to the next track.
+
+    Requires `python-dbus` available from every distros' package manager.
 
     .. rubric:: Available formatters (uses :ref:`formatp`)
 
@@ -38,7 +38,7 @@ class NowPlaying(IntervalModule):
         ("player", "Player name. If not set, compatible players will be \
                     detected automatically."),
         ("status", "Dictionary mapping pause, play and stop to output text"),
-        ("format", "formatp string"),
+        ("format", "``formatp`` string"),
         ("color", "Text color"),
         ("format_no_player", "Text to show if no player is detected"),
         ("color_no_player", "Text color when no player is detected"),

@@ -27,9 +27,9 @@ class Solaar(IntervalModule):
     interval = 30
 
     settings = (
-        ("nameOfDevice", "name of the bluetooth-device"),
-        ("color", "standard color"),
-        ("error_color", "color to use when non zero exit code is returned"),
+        ("nameOfDevice", "Name of the bluetooth-device"),
+        ("color", "Default color"),
+        ("error_color", "Color to use when non zero exit code is returned"),
     )
 
     required = ("nameOfDevice",)

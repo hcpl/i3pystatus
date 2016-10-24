@@ -6,16 +6,19 @@ class Temperature(IntervalModule):
     Shows CPU temperature of Intel processors
 
     AMD is currently not supported as they can only report a relative temperature, which is pretty useless
+
+    .. rubric:: Available formatters
+
+    `{temp}` — CPU temperature in degree Celcius
     """
 
     settings = (
-        ("format",
-         "format string used for output. {temp} is the temperature in degrees celsius"),
-        ('display_if', 'snippet that gets evaluated. if true, displays the module output'),
-        "color",
-        "file",
-        "alert_temp",
-        "alert_color",
+        "format",
+        ('display_if', 'Snippet that gets evaluated. If true, displays the module output'),
+        ("color", "Default color"),
+        ("file", "File from which temperature is retrieved"),
+        ("alert_temp", "Temperature, above which is dangerous to exceed"),
+        ("alert_color", "Color used when alert temperature is exceeded"),
     )
     format = "{temp} °C"
     color = "#FFFFFF"

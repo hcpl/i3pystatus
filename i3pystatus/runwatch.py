@@ -14,8 +14,8 @@ class RunWatch(IntervalModule):
 
     .. rubric:: Available formatters
 
-    * {pid}
-    * {name}
+    * `{pid}` — process ID
+    * `{name}` — process name
     """
 
     format_up = "{name}"

@@ -44,7 +44,7 @@ next``.
         ("host"),
         ("port", "MPD port. If set to 0, host will we interpreted as a Unix \
 socket."),
-        ("format", "formatp string"),
+        ("format", "``formatp`` string"),
         ("status", "Dictionary mapping pause, play and stop to output"),
         ("color", "The color of the text"),
         ("max_field_len", "Defines max length for in truncate_fields defined \

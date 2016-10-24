@@ -3,12 +3,12 @@ from i3pystatus import IntervalModule
 
 class CpuFreq(IntervalModule):
     """
-    class uses by default `/proc/cpuinfo` to determine the current cpu frequency
+    Uses by default `/proc/cpuinfo` to determine the current CPU frequency
 
     .. rubric:: Available formatters
 
-    * `{avg}` - mean from all cores in MHz `4.3f`
-    * `{avgg}` - mean from all cores in GHz `1.2f`
+    * `{avg}` - mean from all cores in MHz (format `4.3f`)
+    * `{avgg}` - mean from all cores in GHz (format `1.2f`)
     * `{coreX}` - frequency of core number `X` in MHz (format `4.3f`), where 0 <= `X` <= number of cores - 1
     * `{coreXg}` - frequency of core number `X` in GHz (fromat `1.2f`), where 0 <= `X` <= number of cores - 1
 
@@ -17,7 +17,7 @@ class CpuFreq(IntervalModule):
     settings = (
         "format",
         ("color", "The text color"),
-        ("file", "override default path"),
+        ("file", "Override default path"),
     )
 
     file = '/proc/cpuinfo'

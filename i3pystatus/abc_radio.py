@@ -38,9 +38,9 @@ class ABCRadio(IntervalModule):
     """
 
     settings = (
-        ("format", "format string for when the player is inactive"),
-        ("format_playing", "format string for when the player is playing"),
-        ("target_stations", "list of station ids to select from. Station ids can be obtained "
+        ("format", "Format string for when the player is inactive"),
+        ("format_playing", "Format string for when the player is playing"),
+        ("target_stations", "List of station ids to select from. Station ids can be obtained "
                             "from the following XML - http://www.abc.net.au/radio/data/stations_apps_v3.xml. "
                             "If the list is empty, all stations will be accessible."),
     )

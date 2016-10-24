@@ -135,12 +135,12 @@ class ParcelTracker(IntervalModule):
 
     Supported carriers: DHL, UPS, Itella
 
-    - parcel.UPS("<id_code>")
-    - parcel.DHL("<id_code>")
-    - parcel.Itella("<id_code>"[, "en"|"fi"|"sv"])
+    * ``parcel.UPS("<id_code>")``
+    * ``parcel.DHL("<id_code>")``
+    * ``parcel.Itella("<id_code>"[, "en"|"fi"|"sv"])``
       Second parameter is language. Requires beautiful soup 4 (bs4)
 
-    Requires lxml and cssselect.
+    Requires `lxml` and `cssselect` (from PyPI)
     """
 
     interval = 60

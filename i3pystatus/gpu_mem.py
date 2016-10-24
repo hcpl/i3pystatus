@@ -6,25 +6,25 @@ class GPUMemory(IntervalModule):
     """
     Shows GPU memory load
 
-    Currently Nvidia only and nvidia-smi required
+    Currently for Nvidia only and ``nvidia-smi`` utility is required
 
     .. rubric:: Available formatters
 
-    * {avail_mem}
-    * {percent_used_mem}
-    * {used_mem}
-    * {total_mem}
+    * `{avail_mem}` — available memory
+    * `{percent_used_mem}` — memory used in percents
+    * `{used_mem}` — memory used
+    * `{total_mem}` — total memory
     """
 
     settings = (
-        ("format", "format string used for output."),
-        ("divisor", "divide all megabyte values by this value, default is 1 (megabytes)"),
-        ("warn_percentage", "minimal percentage for warn state"),
-        ("alert_percentage", "minimal percentage for alert state"),
-        ("color", "standard color"),
-        ("warn_color", "defines the color used when warn percentage is exceeded"),
-        ("alert_color", "defines the color used when alert percentage is exceeded"),
-        ("round_size", "defines number of digits in round"),
+        ("format", "Format string used for output"),
+        ("divisor", "Divide all megabyte values by this value, default is 1 (megabytes)"),
+        ("warn_percentage", "Minimal percentage for warn state"),
+        ("alert_percentage", "Minimal percentage for alert state"),
+        ("color", "Default color"),
+        ("warn_color", "Color used when warn percentage is exceeded"),
+        ("alert_color", "Color used when alert percentage is exceeded"),
+        ("round_size", "Defines number of digits in round"),
 
     )
 

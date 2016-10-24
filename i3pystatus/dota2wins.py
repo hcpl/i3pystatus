@@ -5,7 +5,8 @@ from i3pystatus import IntervalModule
 class Dota2wins(IntervalModule):
     """
     Displays the win/loss ratio of a given Dota account.
-    Requires: dota2py
+
+    Requires `dota2py` (from PyPI)
     """
 
     settings = (

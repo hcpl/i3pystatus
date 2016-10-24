@@ -12,22 +12,21 @@ class Ping(IntervalModule):
 
     .. rubric:: Available formatters
 
-    * {ping} the ping value in milliseconds.
+    * `{ping}` — the ping value in milliseconds.
     """
 
     interval = 5
 
     settings = (
-        "color",
-        "format",
-        ("color_disabled", "color when disabled"),
-        ("color", "color when latency is below threshold"),
-        ("color_bad", "color when latency is above threshold"),
-        ("color_down", "color when ping fail"),
-        ("format_disabled", "format string when disabled"),
-        ("format_down", "format string when ping fail"),
-        ("latency_threshold", "latency threshold in ms"),
-        ("host", "host to ping")
+        ("color", "Color when latency is below threshold"),
+        ("color_bad", "Color when latency is above threshold"),
+        ("color_disabled", "Color when disabled"),
+        ("color_down", "Color when ping fails"),
+        ("format", "Format string when latency is below threshold"),
+        ("format_disabled", "Format string when disabled"),
+        ("format_down", "Format string when ping fails"),
+        ("latency_threshold", "Latency threshold in ms"),
+        ("host", "Host to ping")
     )
 
     color = "#FFFFFF"

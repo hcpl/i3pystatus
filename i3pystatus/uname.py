@@ -18,7 +18,7 @@ class Uname(Module):
 
     format = "{sysname} {release}"
     settings = (
-        ("format", "format string used for output"),
+        "format",
     )
 
     def init(self):

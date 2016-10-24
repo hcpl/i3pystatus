@@ -14,41 +14,41 @@ class Reddit(IntervalModule):
     reddit.com. Left-clicking on the display text opens the permalink/comments
     page using webbrowser.open() while right-clicking opens the URL of the
     submission directly. Depends on the Python Reddit API Wrapper (PRAW)
-    <https://github.com/praw-dev/praw>.
+    https://github.com/praw-dev/praw.
 
     .. rubric:: Available formatters
 
-    * {submission_title}
-    * {submission_author}
-    * {submission_points}
-    * {submission_comments}
-    * {submission_permalink}
-    * {submission_url}
-    * {submission_domain}
-    * {submission_subreddit}
-    * {message_unread}
-    * {message_author}
-    * {message_subject}
-    * {message_body}
-    * {link_karma}
-    * {comment_karma}
+    * `{submission_title}`
+    * `{submission_author}`
+    * `{submission_points}`
+    * `{submission_comments}`
+    * `{submission_permalink}`
+    * `{submission_url}`
+    * `{submission_domain}`
+    * `{submission_subreddit}`
+    * `{message_unread}`
+    * `{message_author}`
+    * `{message_subject}`
+    * `{message_body}`
+    * `{link_karma}`
+    * `{comment_karma}`
 
     """
 
     settings = (
-        ("format", "Format string used for output."),
-        ("username", "Reddit username."),
-        ("password", "Reddit password."),
-        ('keyring_backend', 'alternative keyring backend for retrieving credentials'),
-        ("subreddit", "Subreddit to monitor. Uses frontpage if unspecified."),
-        ("sort_by", "'hot', 'new', 'rising', 'controversial', or 'top'."),
-        ("color", "Standard color."),
-        ("colorize", "Enable color change on new message."),
-        ("color_orangered", "Color for new messages."),
-        ("mail_brackets", "Display unread message count in square-brackets."),
-        ("title_maxlen", "Maximum number of characters to display in title."),
-        ("interval", "Update interval."),
-        ("status", "New message indicator."),
+        ("format", "Format string used for output"),
+        ("username", "Reddit username"),
+        ("password", "Reddit password"),
+        ('keyring_backend', 'Alternative keyring backend for retrieving credentials'),
+        ("subreddit", "Subreddit to monitor. Uses frontpage if unspecified"),
+        ("sort_by", "'hot', 'new', 'rising', 'controversial', or 'top'"),
+        ("color", "Standard color"),
+        ("colorize", "Enable color change on new message"),
+        ("color_orangered", "Color for new messages"),
+        ("mail_brackets", "Display unread message count in square-brackets"),
+        ("title_maxlen", "Maximum number of characters to display in title"),
+        ("interval", "Update interval"),
+        ("status", "New message indicator"),
     )
     format = "[{submission_subreddit}] {submission_title} ({submission_domain})"
     username = ""

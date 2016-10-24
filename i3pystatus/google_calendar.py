@@ -16,7 +16,7 @@ class GoogleCalendar(IntervalModule, ColorRangeModule):
     Simple module for displaying next Google Calendar event.
 
     Requires the Google Calendar API package - https://developers.google.com/google-apps/calendar/quickstart/python.
-    Additionally requires the `colour`, `httplib2`, `oauth2client`, `pytz`, `apiclient` and `dateutil` modules.
+    Additionally requires the PyPI packages `colour`, `httplib2`, `oauth2client`, `pytz`, `apiclient` and `python-dateutil`.
 
     All top level keys returned by the Google Calendar API can be used as formatters. Some
     examples include:
@@ -33,7 +33,7 @@ class GoogleCalendar(IntervalModule, ColorRangeModule):
 
     """
     settings = (
-        ('format', 'format string'),
+        ('format', 'Format string'),
         ("credential_path", "Path to credentials"),
         ("skip_recurring", "Skip recurring events."),
         ("days", "Only show events between now and this many days in the future"),

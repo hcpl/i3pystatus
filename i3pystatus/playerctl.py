@@ -21,13 +21,13 @@ class Playerctl(IntervalModule):
     """
 
     settings = (
-        ('format', 'formatp string'),
+        ('format', '``formatp`` string'),
         ('format_not_running', 'Text to show if player is not running'),
         ('color', 'The color of the text'),
         ('color_not_running', 'The color of the text, when player is not running'),
         ('status', 'Dictionary mapping status to output'),
         ('player_name',
-            'Name of music player, use `playerctl -l` with player running to get. If None, tries to autodetect.'),
+            'Name of music player, use `playerctl -l` with player running to get. If None, tries to autodetect'),
     )
 
     # default settings

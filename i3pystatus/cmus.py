@@ -13,7 +13,7 @@ def _extract_artist_title(input):
 
 class Cmus(IntervalModule):
     """
-    Gets the status and current song info using cmus-remote
+    Gets the status and current song info using ``cmus-remote`` utility
 
     .. rubric:: Available formatters
 
@@ -30,7 +30,7 @@ class Cmus(IntervalModule):
     """
 
     settings = (
-        ('format', 'formatp string'),
+        ('format', '``formatp`` string'),
         ('format_not_running', 'Text to show if cmus is not running'),
         ('color', 'The color of the text'),
         ('color_not_running', 'The color of the text, when cmus is not running'),

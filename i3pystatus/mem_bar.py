@@ -8,11 +8,11 @@ class MemBar(IntervalModule, ColorRangeModule):
     """
     Shows memory load as a bar.
 
+    Requires `psutil`, `colour` (from PyPI)
+
     .. rubric:: Available formatters
 
-    * {used_mem_bar}
-
-    Requires psutil and colour (from PyPI)
+    * `{used_mem_bar}`
     """
 
     format = "{used_mem_bar}"
@@ -27,15 +27,13 @@ class MemBar(IntervalModule, ColorRangeModule):
         self.colors = self.get_hex_color_range(self.color, self.alert_color, 100)
 
     settings = (
-        ("format", "format string used for output."),
-        ("warn_percentage", "minimal percentage for warn state"),
-        ("alert_percentage", "minimal percentage for alert state"),
-        ("color", "standard color"),
-        ("warn_color",
-         "defines the color used when warn percentage is exceeded"),
-        ("alert_color",
-         "defines the color used when alert percentage is exceeded"),
-        ("multi_colors", "whether to use range of colors from 'color' to 'alert_color' based on memory usage."),
+        ("format", "Format string used for output"),
+        ("warn_percentage", "Minimal percentage for warn state"),
+        ("alert_percentage", "Minimal percentage for alert state"),
+        ("color", "Default color"),
+        ("warn_color", "Color used when warn percentage is exceeded"),
+        ("alert_color", "Color used when alert percentage is exceeded"),
+        ("multi_colors", "Whether to use range of colors from 'color' to 'alert_color' based on memory usage."),
     )
 
     def run(self):

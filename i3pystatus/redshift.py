@@ -14,10 +14,10 @@ class Redshift(IntervalModule):
     Show status and control redshift - http://jonls.dk/redshift/.
 
     This module runs an instance of redshift by itself, since it needs to parse
-    its output, so you should remove redshift/redshift-gtk from your i3 config
+    its output, so you should remove ``redshift``/``redshift-gtk`` from your i3 config
     before using this module.
 
-    Requires `redshift` and `redshift-gtk`.
+    Requires `redshift` and `redshift-gtk` available from every distros' package manager.
 
     .. rubric:: Available formatters
 

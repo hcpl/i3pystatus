@@ -58,7 +58,7 @@ class WhosOnLocation():
 
 class WOL(IntervalModule):
     """
-    Change your whosonlocation.com status.
+    Change your `<http://whosonlocation.com>`_ status.
 
     Requires the PyPI module `beautifulsoup4`
     """
@@ -67,7 +67,7 @@ class WOL(IntervalModule):
     password = None
 
     settings = (
-        ('keyring_backend', 'alternative keyring backend for retrieving credentials'),
+        ('keyring_backend', 'Alternative keyring backend for retrieving credentials'),
         'email',
         'password'
     )

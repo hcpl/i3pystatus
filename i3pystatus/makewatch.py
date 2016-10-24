@@ -6,7 +6,8 @@ import getpass
 class MakeWatch(IntervalModule):
     """
     Watches for make jobs and notifies when they are completed.
-    requires: psutil
+
+    Requires `psutil` (from PyPI)
     """
 
     settings = (

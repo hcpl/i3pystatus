@@ -19,9 +19,9 @@ class Backlight(File):
     """
 
     settings = (
-        ("format", "format string, formatters: brightness, max_brightness, percentage"),
+        "format",
         ("backlight",
-            "backlight, see `/sys/class/backlight/`. Supports glob expansion, i.e. `*` matches anything. "
+            "Backlight, see `/sys/class/backlight/`. Supports glob expansion, i.e. `*` matches anything. "
             "If it matches more than one filename, selects the first one in alphabetical order"),
         "color",
     )
