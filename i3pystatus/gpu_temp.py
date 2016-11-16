@@ -30,7 +30,7 @@ class GPUTemperature(IntervalModule):
         temp = gpu.query_nvidia_smi().temp
         temp_alert = temp is None or temp >= self.alert_temp
 
-        if eval(self.display_if):
+        if self.display_if:
             self.output = {
                 "full_text": self.format.format(temp=temp),
                 "color": self.color if not temp_alert else self.alert_color,
